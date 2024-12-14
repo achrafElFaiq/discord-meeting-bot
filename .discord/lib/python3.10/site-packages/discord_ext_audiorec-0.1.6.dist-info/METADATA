@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: discord-ext-audiorec
+Version: 0.1.6
+Summary: A discord.py experimental extention for audio recording
+Home-page: https://github.com/shirataki2/discord-ext-audiorec
+Author: Shirataki2
+Author-email: tmy1997530@icloud.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6.0
+Description-Content-Type: text/x-rst
+Requires-Dist: discord.py[voice] (<2.0,>=1.7)
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: sphinxcontrib-trio ; extra == 'docs'
+Requires-Dist: sphinxcontrib-websupport ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+
+discord-ext-audiorec
+####################
+
+|Docs| |PyPI| |Support|
+
+
+**This project is currently under development. We do not guarantee it works.**
+
+A discord.py experimental extension for audio recording
+
+Inspired by `discord-ext-native-voice <https://github.com/Rapptz/discord-ext-native-voice>`_
+
+Installation
+============
+
+Supported OS: Windows, Mac OS X, Linux
+Supported Python Version: 3.6, 3.7, 3.8, 3.9
+
+.. code-block:: sh
+
+    python -m pip install -U discord-ext-audiorec
+
+
+Build
+=====
+
+Requires
+++++++++
+
+- Rust 1.47 +
+
+.. code-block:: sh
+
+    python -m pip install -r requirements-dev.txt
+
+    python -m pip install -U .
+    # or
+    python setup.py develop
+
+The compilation and Rust package resolution will
+be automatically handled by setuptools-rust.
+
+
+.. |Docs| image:: https://readthedocs.org/projects/discord-ext-audiorec/badge/?version=latest
+    :target: https://discord-ext-audiorec.readthedocs.io/en/latest/?badge=latest
+
+.. |PyPI| image:: https://badge.fury.io/py/discord-ext-audiorec.svg
+    :target: https://pypi.org/project/discord-ext-audiorec/
+
+
+.. |Support| image:: https://img.shields.io/pypi/pyversions/discord-ext-audiorec.svg
+    :target: https://pypi.org/project/discord-ext-audiorec/
+
+
