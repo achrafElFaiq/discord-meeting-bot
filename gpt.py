@@ -1,7 +1,8 @@
 import google.generativeai as genai
 import datetime
+from config.api_secret import API_KEY_GEMINI
 # Configure the API key
-genai.configure(api_key="AIzaSyDuFYMT0SA0dVZi4_4rqaErIHVCcM33oAs")
+genai.configure(api_key=API_KEY_GEMINI)
 
 # Path to your input text file
 current_datetime = datetime.datetime.now()
